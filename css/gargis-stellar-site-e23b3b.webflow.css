@@ -125,9 +125,13 @@ a {
 }
 
 ul {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-flow: column;
   margin-top: 0;
   margin-bottom: 10px;
   padding-left: 40px;
+  display: flex;
 }
 
 img {
@@ -402,11 +406,14 @@ blockquote {
 }
 
 .generic-wrapper {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   background-color: #0000;
   border-bottom: 1px solid #000;
-  flex-direction: column;
+  flex-flow: wrap;
+  place-content: flex-start;
   align-items: flex-start;
-  width: 100%;
+  width: auto;
   display: flex;
   position: relative;
 }
@@ -484,6 +491,9 @@ blockquote {
   box-shadow: 0 0 64px 0 var(--theme--primary-faded);
   border-radius: 1px;
   width: 100%;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-long-image-section {
@@ -909,7 +919,7 @@ blockquote {
 }
 
 .grid-case-study-2x1.margin-bottom-48 {
-  margin-bottom: 0;
+  margin-bottom: 3rem;
 }
 
 .grid-2x2 {
@@ -1466,6 +1476,9 @@ blockquote {
   background-color: #0000000f;
   border-radius: 1px;
   width: 100%;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 4vw;
 }
 
@@ -1588,6 +1601,8 @@ blockquote {
   width: 50%;
   max-width: 30rem;
   height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .hero-background-wrapper {
@@ -2058,7 +2073,8 @@ blockquote {
 }
 
 .hero-heading-wrapper {
-  width: 45%;
+  width: 50%;
+  margin-top: 6vh;
   margin-bottom: auto;
 }
 
@@ -2349,6 +2365,7 @@ blockquote {
 
 .paragraph-36 {
   color: #c5c5c5;
+  text-align: left;
   font-size: calc(.35vw + 1rem);
   font-weight: 400;
   line-height: 1.4em;
@@ -2616,7 +2633,7 @@ blockquote {
 .container-7.narrow {
   width: 60%;
   min-width: 50px;
-  margin-left: 39px;
+  margin-left: 152px;
   margin-right: auto;
 }
 
@@ -2646,6 +2663,8 @@ blockquote {
 }
 
 .quote-card-3 {
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
   background-color: #171612;
   border-radius: 2px;
   flex-direction: column;
@@ -2969,6 +2988,7 @@ blockquote {
   flex: none;
   justify-content: flex-end;
   max-width: 100%;
+  margin-top: 0;
   font-size: 8vw;
   font-weight: 500;
   line-height: 100%;
@@ -3049,7 +3069,7 @@ blockquote {
   grid-row-gap: 13vw;
   flex: 1;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   height: 100%;
   padding-left: 4.4rem;
   display: flex;
@@ -3562,6 +3582,23 @@ blockquote {
 
 .link-block-3 {
   width: 15%;
+}
+
+.div-block-14 {
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
+  flex-flow: row;
+  display: flex;
+}
+
+.image-7 {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-2 {
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 991px) {
