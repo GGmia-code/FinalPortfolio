@@ -1152,7 +1152,7 @@ blockquote {
 .grid {
   grid-column-gap: 4rem;
   grid-row-gap: 4rem;
-  border-bottom: 1px solid #d3d3d3;
+  border-bottom: 1px #d3d3d3;
   grid-template-rows: auto;
   grid-template-columns: 1fr 2fr;
   margin-bottom: 4rem;
@@ -5212,7 +5212,7 @@ blockquote {
   }
 }
 
-#w-node-_9edb735e-7c79-f775-6238-42cf0c87b973-145ba95c, #w-node-e5356db8-0067-b91c-943c-a8de14b0c89a-f50a9057 {
+#w-node-_9edb735e-7c79-f775-6238-42cf0c87b973-145ba95c {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
